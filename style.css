@@ -1,0 +1,33 @@
+* {
+   padding: 0;
+   margin: 0;
+   font-family: 'Noto Sans';
+}
+
+.grid {
+   display: grid;
+   grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+   margin: 10%;
+}
+
+.reference {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 5px;
+   text-align: center;
+   border: 4px dotted black;
+}
+
+a {
+   text-decoration-line: none;
+   text-shadow: 0 0 5px hsl(17 100% 47%);
+   color: hsl(204 100% 50%);
+   transition: color 0.20s, text-shadow 0.20s ease-in-out;
+}
+
+a:hover {
+   text-shadow: 10px 10px 5px hsl(204 100% 50%);
+   color: hsl(17 100% 47%);
+   transition: color 0.40s, text-shadow 0.30s ease-in-out 100ms; 
+}
